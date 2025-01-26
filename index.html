@@ -1,12 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 1 - Adiciones</title>
+    <title>Adicción a las Apuestas en Videojuegos</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-image: url('https://via.placeholder.com/1500x800');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #90e0ef;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0077b6;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .about img {
+            max-width: 500px;
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about div {
+            flex: 1;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .service {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        .service img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #0077b6;
+        }
+
+        .service h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0077b6;
+        }
+
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Adiciones</h1>
-    <img src="imagenes/gato.png" alt="gato foto">
+    <header id="inicio">
+        <h1>Adicción a las Apuestas en Videojuegos</h1>
+        <p>Explorando los riesgos del gasto excesivo y el impacto en la salud mental</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+            <li><a href="#factores">Factores Clave</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#creditos">Créditos</a></li>
+        </ul>
+    </nav>
+
+    <section id="impacto">
+        <div class="about">
+            <img src="https://via.placeholder.com/500x400" alt="Imagen de videojuegos">
+            <div>
+                <h2>El Impacto de las Apuestas Digitales</h2>
+                <p>La adicción a las apuestas en los videojuegos, también conocida como "loot boxes" o "microtransacciones", es un problema creciente que combina la emoción de jugar con el riesgo financiero. Muchos jugadores invierten grandes sumas de dinero en busca de recompensas virtuales.</p>
+                <p>Estos sistemas están diseñados para ser altamente adictivos, utilizando mecánicas similares a las de los casinos para captar la atención de los usuarios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="factores">
+        <h2>Factores Clave</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Diseño atractivo">
+                <h3>Diseño Atractivo</h3>
+                <p>Los gráficos coloridos y los sonidos emocionantes motivan a los jugadores a seguir apostando.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Recompensas aleatorias">
+                <h3>Recompensas Aleatorias</h3>
+                <p>El sistema de recompensas impredecibles crea una sensación de anticipación constante.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Impacto financiero">
+                <h3>Impacto Financiero</h3>
+                <p>El gasto acumulativo en microtransacciones puede afectar severamente la economía personal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="audio">
+        <h2>Reproductor de Audio</h2>
+        <p>Escucha la música de fondo utilizada en este sitio web:</p>
+        <audio controls>
+            <source src="musica.mp3" type="audio/mpeg">
+            Tu navegador no soporta reproducción de audio.
+        </audio>
+    </section>
+
+    <footer id="creditos">
+        <p>&copy; 2025 Prevención Digital. Todos los derechos reservados.</p>
+        <p>Música de fondo: <i>"Nombre de la canción"</i> por Artista (Licencia).</p>
+    </footer>
+
+    <script>
+        // Hacer que el menú siga al usuario
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            if (scrollY > 50) {
+                nav.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combatiendo las Adicciones a las Apuestas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f7;
+            color: #2c3e50;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #34495e;
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        header:hover {
+            background: #2c3e50;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #1abc9c;
+        }
+        .hero {
+            height: 100vh;
+            background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero button {
+            background: #1abc9c;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background: #16a085;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        h1 {
+            text-align: center;
+            color: #1abc9c;
+            transition: transform 0.3s;
+        }
+        h1:hover {
+            transform: scale(1.1);
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        iframe, video {
+            width: 100%;
+            height: 360px;
+            margin-top: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        iframe:hover, video:hover {
+            transform: scale(1.05);
+        }
+        .info-section p {
+            margin: 1rem 0;
+            transition: color 0.3s;
+        }
+        .info-section p:hover {
+            color: #1abc9c;
+        }
+        audio {
+            display: block;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #34495e;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        footer:hover {
+            background: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            iframe, video {
+                height: 200px;
+            }
+            header nav {
+                flex-direction: column;
+            }
+            header nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#video">Inicio</a>
+                <a href="#info">Información</a>
+                <a href="#audio">Música</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Bienvenidos a la Lucha Contra las Adicciones</h1>
+        <p>Descubre cómo combatir las apuestas en videojuegos y proteger tu bienestar.</p>
+        <button onclick="document.getElementById('video').scrollIntoView({behavior: 'smooth'})">Explorar Más</button>
+    </div>
+
+    <div class="container">
+        <section class="video-section" id="video">
+            <h2>Vídeo Informativo</h2>
+            <iframe src="https://www.youtube.com/embed/video-id" frameborder="0" allowfullscreen></iframe>
+            <video controls autoplay muted>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </section>
+
+        <section class="info-section" id="info">
+            <h2>Información y Impacto</h2>
+            <p>
+                Las apuestas en videojuegos representan un problema creciente entre los jugadores jóvenes. Este hábito puede
+                convertirse rápidamente en una adicción, afectando la salud mental y financiera de los individuos.
+            </p>
+            <p>
+                A través de este sitio web, queremos aumentar la conciencia sobre esta problemática y proporcionar recursos
+                para combatir esta adicción, como terapias, grupos de apoyo y estrategias para dejar de apostar.
+            </p>
+        </section>
+
+        <section class="audio-section" id="audio">
+            <h2>Música de Fondo</h2>
+            <p>
+                Disfruta la música relajante mientras navegas por la página. Este archivo musical es de uso libre con una
+                licencia Creative Commons.
+            </p>
+            <audio controls autoplay>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el reproductor de audio.
+            </audio>
+        </section>
+    </div>
+
+    <footer>
+        © 2025 Combatiendo las Adicciones a las Apuestas. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
