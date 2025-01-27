@@ -96,9 +96,9 @@
         text-align: center;
         padding: 0 1rem;
         margin-top: 0; /* Elimina el margen superior */
-    }
+        }
 
-    .hero::after {
+        .hero::after {
         content: '';
         position: absolute;
         top: 0;
@@ -107,52 +107,52 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5); /* Sombreado oscuro */
         z-index: 1;
-    }
+        }
 
-    .hero h1, .hero p, .hero button {
+        .hero h1, .hero p, .hero button {
         position: relative;
         z-index: 2; /* Asegura que el contenido esté encima del sombreado */
-    }
+        }
 
-    .hero h1 {
+        .hero h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
+        }
 
-    .hero p {
+        .hero p {
         font-size: 1.5rem;
         margin-bottom: 2rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    }
+        }
 
-    .hero button {
-        background: #1abc9c;
-        color: white;
-        border: none;
-        padding: 0.8rem 1.5rem;
-        font-size: 1.2rem;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s;
-    }
+        .hero button {
+            background: #1abc9c;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
 
-    .hero button:hover {
-        background: #16a085;
-    }
+        .hero button:hover {
+            background: #16a085;
+        }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            margin-top: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2rem;
+                margin-top: 2rem;
         }
         h1 {
-            text-align: center;
-            color: #1abc9c;
-            transition: transform 0.3s;
+                text-align: center;
+                color: #1abc9c;
+                transition: transform 0.3s;
         }
         h1:hover {
-            transform: scale(1.1);
+                transform: scale(1.1);
         }
         section {
             margin: 2rem 0;
@@ -167,8 +167,8 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         iframe, video {
-            width: 100%;
-            height: 360px;
+             width: 100%;
+             height: 360px;
             margin-top: 1rem;
             border-radius: 8px;
             transition: transform 0.3s;
@@ -181,7 +181,7 @@
             transition: color 0.3s;
         }
         .info-section p:hover {
-            color: #1abc9c;
+                color: #1abc9c;
         }
         audio {
             display: block;
@@ -203,15 +203,15 @@
         }
         @media (max-width: 768px) {
             iframe, video {
-                height: 200px;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            
+            height: 200px;
+        }
+        .hero h1 {
+            font-size: 2rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+                
         }
     </style>
     <script>
@@ -234,8 +234,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="N.svg">
-            <span>Logo</span>
+            <img src="N.svg" alt="Logo">
         </div>
         <nav>
             <button class="menu-toggle">☰</button>
@@ -278,13 +277,13 @@
         <section class="audio-section" id="audio">
             <h2>Música de Fondo</h2>
             <p>
-                Disfruta la música relajante mientras navegas por la página. Este archivo musical es de uso libre con una
-                licencia Creative Commons.
-            </p>
+                Disfruta la música relajante mientras navegas por la página. Este <a href="https://pixabay.com/music/modern-classical-sad-epic-cinematic-music-classical-233797/">archivo musical </a> es de uso libre con una
+                licencia Creative Commons.Usada bajo la Licencia de contenido de Pixabay.</p>
             <audio controls autoplay>
                 <source src="sad.mp3" type="audio/mpeg">
                 Tu navegador no soporta el reproductor de audio.
             </audio>
+            
         </section>
     </div>
 
